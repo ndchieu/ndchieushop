@@ -22,8 +22,8 @@ class AuthAdmin
         }
         else
         {
-            session()->flush();
-            return redirect()->route('login');
+            // session()->flush();
+            return redirect()->route('user.dashboard');
         }
         return $next($request);
 
